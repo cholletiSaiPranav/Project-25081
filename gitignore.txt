@@ -1,3 +1,34 @@
+AWS
+-->First we have to save key value pair .pam file in desktop in AWS folder
+-->open cmd in this directory
+-->now paste the ssh key which was copied from aws instance and click enter
+then run following commands
+-->sudo apt update
+-->sudo apt-get install docker.io
+-->sudo apt install git
+-->sudo apt install nano
+now in desktop create a folder Example in that create simple index.html  with any <h> and <p> tags
+push the index.html to git 
+After pushing clone the repo url
+
+Run the following commands
+-->git clone url
+-->ls
+you can see ur repo directory 
+-->cd yourdir
+-->ls
+you will see index.html
+-->nano Dockerfile
+then paste the following to dockerfile
+FROM nginx:alpine
+COPY . /usr/share/nginx/html
+-->press ctrl+o and enter then ctrl+x to exit
+-->sudo  docker build -t myweb .
+-->sudo  docker run -d -p 80:80 myweb
+then click public ipv4 in the instance go and access in browser...
+
+
+
 1)Kubernetes
 (docker on lo pettu)
 
