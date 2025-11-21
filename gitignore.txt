@@ -1,3 +1,7 @@
+https://github.com/budarajumadhurika/SampleMavenWebProject.git
+<role rolename="manager-gui"/>
+<role rolename="manager-script"/>
+<user username="admin" password="admin123" roles="manager-gui,manager-script"/>
 -->First we have to save key value pair .pam file in desktop in AWS folder
 -->open cmd in this directory
 -->now paste the ssh key which was copied from aws instance and click enter
